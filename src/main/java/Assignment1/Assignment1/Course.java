@@ -6,15 +6,15 @@ import org.joda.time.LocalDate;
 
 public class Course {
 	private String courseName;
-	private LocalDate startDate;
-	private LocalDate endDate;
-	private Module modulesList[];
+	private LocalDate start;
+	private LocalDate end;
+	private Module modules[];
 	
-	public Course(String courseName, Module modulesList[], LocalDate startDate, LocalDate endDate ){
+	public Course(String courseName, Module modules[], LocalDate start, LocalDate end ){
 		this.courseName = courseName;
-		this.modulesList = modulesList;
-		this.startDate = startDate;
-		this.endDate = endDate;
+		this.modules = modules;
+		this.start = start;
+		this.end = end;
 	}
 	
 	public String getCourseName(){
@@ -26,24 +26,24 @@ public class Course {
 	}
 	
 	public LocalDate getStartDate(){
-		return startDate;
+		return start;
 	}
 	public void setStartDate(LocalDate StartDate){
-		StartDate = startDate;
+		StartDate = start;
 	}
 	
 	public LocalDate getEndDate(){
-		return endDate;
+		return end;
 	}
 	public void setEndDate(LocalDate EndDate){
-		EndDate = endDate;
+		EndDate = end;
 	}
 	
-	public Module[] getModuleList(){
-		return modulesList;
+	public Module[] getModules(){
+		return modules;
 	}
 	
-	public void setModuleList(Module ModuleList[]){
-		ModuleList = modulesList;
+	public void setModules(Module ModuleList[]){
+		ModuleList = modules;
 	}
 }

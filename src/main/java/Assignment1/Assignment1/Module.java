@@ -2,12 +2,12 @@ package Assignment1.Assignment1;
 
 public class Module {
 	private String moduleName;
-	private String ID;
+	private String id;
 	private Student studentList[];
 	
-	public Module(String moduleName, String ID, Student studentList[]){
+	public Module(String moduleName, String id, Student studentList[]){
 		this.moduleName = moduleName;
-		this.ID = ID;
+		this.id = id;
 		this.studentList= studentList;
 	}
 	
@@ -20,10 +20,10 @@ public class Module {
 	}
 	
 	public String getID(){
-		return  ID;
+		return  id;
 	}
 	public void setID(String moduleID){
-		moduleID = ID;
+		moduleID = id;
 	}
 	
 	public Student[] getStudentList(){

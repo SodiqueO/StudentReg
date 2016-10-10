@@ -10,7 +10,7 @@ public class StudentTest {
 	public void test(){
 			
 		Student s = new Student ("Stephen", "20/03/1985", 30, 134902);
-		assertEquals("Stephen", Student.getUsername());
+		assertEquals("Stephen30", Student.getUsername());
 			System.out.println("Student is:" +Student.getUsername() );
 		
 		}
